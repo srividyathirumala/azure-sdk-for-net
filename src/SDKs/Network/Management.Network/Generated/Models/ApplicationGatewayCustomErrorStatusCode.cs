@@ -12,13 +12,11 @@ namespace Microsoft.Azure.Management.Network.Models
 {
 
     /// <summary>
-    /// Defines values for AzureFirewallNetworkRuleProtocol.
+    /// Defines values for ApplicationGatewayCustomErrorStatusCode.
     /// </summary>
-    public static class AzureFirewallNetworkRuleProtocol
+    public static class ApplicationGatewayCustomErrorStatusCode
     {
-        public const string TCP = "TCP";
-        public const string UDP = "UDP";
-        public const string Any = "Any";
-        public const string ICMP = "ICMP";
+        public const string HttpStatus403 = "HttpStatus403";
+        public const string HttpStatus502 = "HttpStatus502";
     }
 }

@@ -159,6 +159,21 @@ namespace Microsoft.Azure.Management.Network
         public virtual IExpressRouteConnectionsOperations ExpressRouteConnections { get; private set; }
 
         /// <summary>
+        /// Gets the IExpressRoutePortsLocationsOperations.
+        /// </summary>
+        public virtual IExpressRoutePortsLocationsOperations ExpressRoutePortsLocations { get; private set; }
+
+        /// <summary>
+        /// Gets the IExpressRoutePortsOperations.
+        /// </summary>
+        public virtual IExpressRoutePortsOperations ExpressRoutePorts { get; private set; }
+
+        /// <summary>
+        /// Gets the IExpressRouteLinksOperations.
+        /// </summary>
+        public virtual IExpressRouteLinksOperations ExpressRouteLinks { get; private set; }
+
+        /// <summary>
         /// Gets the IInterfaceEndpointsOperations.
         /// </summary>
         public virtual IInterfaceEndpointsOperations InterfaceEndpoints { get; private set; }
@@ -646,6 +661,9 @@ namespace Microsoft.Azure.Management.Network
             ExpressRouteCrossConnectionPeerings = new ExpressRouteCrossConnectionPeeringsOperations(this);
             ExpressRouteGateways = new ExpressRouteGatewaysOperations(this);
             ExpressRouteConnections = new ExpressRouteConnectionsOperations(this);
+            ExpressRoutePortsLocations = new ExpressRoutePortsLocationsOperations(this);
+            ExpressRoutePorts = new ExpressRoutePortsOperations(this);
+            ExpressRouteLinks = new ExpressRouteLinksOperations(this);
             InterfaceEndpoints = new InterfaceEndpointsOperations(this);
             LoadBalancers = new LoadBalancersOperations(this);
             LoadBalancerBackendAddressPools = new LoadBalancerBackendAddressPoolsOperations(this);

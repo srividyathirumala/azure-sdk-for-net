@@ -12,13 +12,11 @@ namespace Microsoft.Azure.Management.Network.Models
 {
 
     /// <summary>
-    /// Defines values for AzureFirewallNetworkRuleProtocol.
+    /// Defines values for ExpressRoutePortsEncapsulation.
     /// </summary>
-    public static class AzureFirewallNetworkRuleProtocol
+    public static class ExpressRoutePortsEncapsulation
     {
-        public const string TCP = "TCP";
-        public const string UDP = "UDP";
-        public const string Any = "Any";
-        public const string ICMP = "ICMP";
+        public const string Dot1Q = "Dot1Q";
+        public const string QinQ = "QinQ";
     }
 }

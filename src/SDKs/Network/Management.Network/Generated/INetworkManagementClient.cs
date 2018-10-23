@@ -156,6 +156,21 @@ namespace Microsoft.Azure.Management.Network
         IExpressRouteConnectionsOperations ExpressRouteConnections { get; }
 
         /// <summary>
+        /// Gets the IExpressRoutePortsLocationsOperations.
+        /// </summary>
+        IExpressRoutePortsLocationsOperations ExpressRoutePortsLocations { get; }
+
+        /// <summary>
+        /// Gets the IExpressRoutePortsOperations.
+        /// </summary>
+        IExpressRoutePortsOperations ExpressRoutePorts { get; }
+
+        /// <summary>
+        /// Gets the IExpressRouteLinksOperations.
+        /// </summary>
+        IExpressRouteLinksOperations ExpressRouteLinks { get; }
+
+        /// <summary>
         /// Gets the IInterfaceEndpointsOperations.
         /// </summary>
         IInterfaceEndpointsOperations InterfaceEndpoints { get; }

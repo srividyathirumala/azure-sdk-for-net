@@ -12,13 +12,12 @@ namespace Microsoft.Azure.Management.Network.Models
 {
 
     /// <summary>
-    /// Defines values for AzureFirewallNetworkRuleProtocol.
+    /// Defines values for VerbosityLevel.
     /// </summary>
-    public static class AzureFirewallNetworkRuleProtocol
+    public static class VerbosityLevel
     {
-        public const string TCP = "TCP";
-        public const string UDP = "UDP";
-        public const string Any = "Any";
-        public const string ICMP = "ICMP";
+        public const string Normal = "Normal";
+        public const string Minimum = "Minimum";
+        public const string Full = "Full";
     }
 }
